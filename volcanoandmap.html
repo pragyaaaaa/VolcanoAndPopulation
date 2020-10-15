@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_deb4647028094a2d89f8ffccc0b81879 {
+                #map_8a7c09926d7543e796075e365b04ba8d {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_deb4647028094a2d89f8ffccc0b81879" ></div>
+            <div class="folium-map" id="map_8a7c09926d7543e796075e365b04ba8d" ></div>
         
 </body>
 <script>    
     
-            var map_deb4647028094a2d89f8ffccc0b81879 = L.map(
-                "map_deb4647028094a2d89f8ffccc0b81879",
+            var map_8a7c09926d7543e796075e365b04ba8d = L.map(
+                "map_8a7c09926d7543e796075e365b04ba8d",
                 {
                     center: [54.526, -105.2551],
                     crs: L.CRS.EPSG3857,
@@ -55,9 +55,39 @@
 
         
     
-            var tile_layer_20e40b9435234e65a0d21f27c057d6b7 = L.tileLayer(
+            var tile_layer_07dfe8db45cd4179b610041b338182f7 = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
                 {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_deb4647028094a2d89f8ffccc0b81879);
+            ).addTo(map_8a7c09926d7543e796075e365b04ba8d);
         
+    
+            var feature_group_8eacfa4f515d405a9fc90d3dc0ee46a3 = L.featureGroup(
+                {}
+            ).addTo(map_8a7c09926d7543e796075e365b04ba8d);
+        
+    
+            var marker_59ede1a4cd5e4dfb82678db12d8f7a90 = L.marker(
+                [37.0902, -95.7129],
+                {}
+            ).addTo(feature_group_8eacfa4f515d405a9fc90d3dc0ee46a3);
+        
+    
+            var icon_e50bcf1722d64e07910a4581628c65ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59ede1a4cd5e4dfb82678db12d8f7a90.setIcon(icon_e50bcf1722d64e07910a4581628c65ec);
+        
+    
+        var popup_b6590ee744144f2781636de2f05d9818 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c78d423d9ebf4d7ba58c1f6b65330747 = $(`<div id="html_c78d423d9ebf4d7ba58c1f6b65330747" style="width: 100.0%; height: 100.0%;">USA</div>`)[0];
+            popup_b6590ee744144f2781636de2f05d9818.setContent(html_c78d423d9ebf4d7ba58c1f6b65330747);
+        
+
+        marker_59ede1a4cd5e4dfb82678db12d8f7a90.bindPopup(popup_b6590ee744144f2781636de2f05d9818)
+        ;
+
+        
+    
 </script>
